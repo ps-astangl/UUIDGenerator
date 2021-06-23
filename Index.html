@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>UUID Generator</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-<form>
-    <div class="form-group row">
-        <label for="input" class="col-sm-2 col-form-label">input</label>
-        <div class="col-sm-10">
+<div class="container-fluid">
+    <h1 class="modal-header">UUID Converter</h1>
+    <form>
+        <div class="form-group">
+            <small id="inputHelp" class="form-text text-muted">Type the string to hash</small>
+            <label for="input">Input</label>
             <input type="text" class="form-control" id="input">
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="output" class="col-sm-2 col-form-label">UUID</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="output">
+        <div class="form-group">
+            <label for="output">UUID</label>
+            <textarea type="text" class="form-control" id="output" readonly></textarea>
         </div>
-    </div>
-</form>
+    </form>
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="CreateMD5Hash.js"></script>
+<script src="main.js"></script>
 </html>
